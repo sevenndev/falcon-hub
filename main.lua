@@ -397,22 +397,14 @@ end)
 -- Add UI
 local Settings = win:Tab("Settings")
 
-Settings:Label("UI Toggle Key:  Right-Ctrl")
+Settings:Label("UI Toggle Key:  Right Shift")
 
 Settings:Button("Copy Discord Invite", function()
-    setclipboard("https://discord.gg/psu")
+    setclipboard("https://dsc.gg/knightx")
     UILib:Notification("Notification", "Copied!", "Okay")
 end)
 
-local ScriptHub = Window:Tab("ScriptHub")
-
-Local:Slider("Walk Speed", 1,250,16, function(v)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
-end)
-
-Local:Slider("Jump Power", 1,450,50, function(v)
-    game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
-end)
+local ScriptHub = win:Tab("ScriptHub")
 
 ScriptHub:Label("SwagMode DaHood Script: ")
 
